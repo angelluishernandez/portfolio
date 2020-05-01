@@ -1,0 +1,52 @@
+.AboutComponent{
+  height: 80vh; 
+  display: grid;
+
+
+}
+
+.row{
+  padding-top: 50px;     
+  width: 90%;
+  margin: 0 auto; 
+}
+.about-picture{
+  background-color: red;
+  height: 100%;
+  width: 60%;
+}
+.divider{
+  height: 100%;
+  width:3%; 
+  padding-left: 10px;
+  border-left: 2px solid green;   
+}
+
+.profile-pic{
+  max-width: 70%;
+  height: auto;
+  border-radius: 15px;
+  
+
+}
+
+.about-text{
+  padding: 40px; 
+  text-align: justify;
+}
+
+.about-text p{
+  margin-top: 20px;
+}
+
+.logo-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.tech-logo{
+  max-width: 50px;
+
+
+
+}
