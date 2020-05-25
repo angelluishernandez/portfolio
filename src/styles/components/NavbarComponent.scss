@@ -1,9 +1,19 @@
-nav{
+.NavBarComponent{
   font-family: $titles;
   font-weight: 800; 
   font-size: 1em; 
-  background: $background; 
+  position: fixed; 
+  top: 0; 
+  // background: $background; 
 
+}
+
+.navbar-transparent{
+  background-color: transparent;
+}
+
+.navbar-colored{
+  background-color: $background;
 }
 #nav-name{
   font-family: $titles;

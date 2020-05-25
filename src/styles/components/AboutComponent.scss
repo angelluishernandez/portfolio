@@ -1,7 +1,29 @@
+#about .container-fluid{
+  height: 85vh
+
+
+}
+
+
 .AboutComponent{
   height: 80vh; 
-  display: grid;
+  background: linear-gradient(-45deg, #C4A381, #BBD686, #EEF1BD, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 
+}
+
+
+@keyframes gradient{
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 
 }
 
@@ -11,7 +33,6 @@
   margin: 0 auto; 
 }
 .about-picture{
-  background-color: red;
   height: 100%;
   width: 60%;
 }
@@ -31,8 +52,8 @@
 }
 
 .about-text{
-  padding: 40px; 
-  text-align: justify;
+  margin: 0 auto; 
+  align-self: center;
 }
 
 .about-text p{
@@ -42,6 +63,7 @@
 .logo-container{
   display: flex;
   justify-content: space-between;
+  margin: 0 auto; 
 }
 
 .tech-logo{

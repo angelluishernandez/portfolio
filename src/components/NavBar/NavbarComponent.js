@@ -1,9 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const NavBarComponent = () => {
+	const [isTop, setIsTop] = useState(false);
+
+	useEffect(() => {
+		document.addEventListener("scroll", () => {
+			const windowIsTop = window.scrollY < 100;
+			setIsTop(windowIsTop);
+		});
+	}, []);
+
 	return (
-		<nav className="navbar navbar-expand-lg NavBarComponent">
+		<nav
+			className={`navbar navbar-expand-lg NavBarComponent ${
+				isTop ? "navbar-transparent" : "navbar-colored"
+			}`}
+		>
 			<Link className="navbar-brand" href="#" id="nav-name">
 				ÁNGEL LUIS HERNÁNDEZ HERRERO
 			</Link>

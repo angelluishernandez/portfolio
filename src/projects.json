@@ -1,0 +1,131 @@
+{
+	"projects": [
+		{
+			"title": "El RealFooder",
+			"techs": ["JS", "CSS", "HTML"],
+			"link": "https://angelluishernandez.github.io/Ironhack-Web-App/",
+			"github": "https://github.com/angelluishernandez/ironhack-game",
+			"description": "Primer proyecto de Ironhack. El Realfooder es un tower-defense en el que tienes que evitar la comida no saludable y consumir la más saludable",
+			"description2": "Desarrollado con Javascript, HTML y CSS",
+			"isIronhack": true
+		},
+		{
+			"title": "Empresaurio",
+			"techs": ["JS", "CSS", "HTML", "NODE", "EXPRESS", "MONGODB", "BOOTSTRAP"],
+			"link": "",
+			"github": "https://github.com/angelluishernandez/empresaurio",
+			"description": "Segundo proyecto de Ironhack. Empresaurio es una aplicación que permite a los empleados de una empresa registrar cuando fichan en su trabajo. Al mismo tiempo los miembros de recursos humanos pueden controlar los fichajes de los trabajadores",
+			"description2": "Desarrollado con Javascript, HTML, CSS, Bootstrap, MongoDB, NodeJS, Express",
+			"isIronhack": true
+		},
+		{
+			"title": "IronNews - Front",
+			"techs": [
+				"JS",
+				"CSS",
+				"HTML",
+				"BOOTSTRAP",
+				"API REST",
+				"REACT",
+				"REDUX",
+				"AXIOS"
+			],
+			"link": "",
+			"github": "https://github.com/angelluishernandez/iron-news-front",
+			"description": "Tercer proyecto de Ironhack. En Ironnews, el usuario puede consultar y almacenar noticias de su interes gracias a la API newsapi.org",
+			"description2": "Desarrollado con Javascript, HTML, CSS, Bootstrap, React y API Rest",
+			"isIronhack": true
+		},
+		{
+			"title": "IronNews - Back",
+			"techs": ["NODE", "EXPRESS", "MONGODB"],
+			"link": "",
+			"github": "https://github.com/angelluishernandez/Ironnews-api",
+			"description": "Tercer proyecto de Ironhack. Back para IronNews",
+			"description2": "Desarrollado con MongoDB, NodeJS, Express",
+			"isIronhack": true
+		},
+		{
+			"title": "Expense Tracker",
+			"techs": [
+				"JS",
+				"CSS",
+				"HTML",
+				"BOOTSTRAP",
+				"API REST",
+				"REACT",
+				"REDUX",
+				"REACT-HOOKS",
+				"REACT-CONTEXT",
+				"FIREBASE",
+				"JEST",
+				"ENZYME"
+			],
+			"link": "",
+			"github": "https://github.com/angelluishernandez/expensetracker-redux-project-",
+			"description": "Proyecto personal. Una aplicación que permite contabilizar gastos",
+			"description2": "Desarrollado con Javascript, HTML, CSS, Bootstrap,  NodeJS, Express, React (Redux, Hooks y Context), Firebase",
+			"isIronhack": false
+		},
+		{
+			"title": "Solidarity",
+			"techs": [
+				"JS",
+				"CSS",
+				"HTML",
+				"BOOTSTRAP",
+				"API REST",
+				"REACT",
+				"REDUX",
+				"REACT-HOOKS",
+				"REACT-CONTEXT"
+			],
+			"link": "",
+			"github": "https://github.com/angelluishernandez/solidarity",
+			"description": "Proyecto personal. Una red social que permite poner en común lo que no necesitamos para ayudar a quienes más lo necesitan",
+			"description2": "Desarrollado con Javascript, HTML, CSS, Bootstrap,  NodeJS, Express, React (Redux, Hooks y Context)",
+			"isIronhack": true
+		},
+		{
+			"title": "Helpers",
+			"techs": [
+				"JS",
+				"CSS",
+				"HTML",
+				"BOOTSTRAP",
+				"API REST",
+				"REACT",
+				"REDUX",
+				"REACT-HOOKS",
+				"REACT-CONTEXT",
+				"FIREBASE"
+			],
+			"link": "",
+			"github": "https://github.com/angelluishernandez/helpers",
+			"description": "Proyecto personal. Una aplicación que permite al usuario registrar tareas con sus pasos correspondientes",
+			"description2": "Desarrollado con Javascript, HTML, CSS, Bootstrap,  NodeJS, Express, React (Redux, Hooks y Context), Firebase",
+			"isIronhack": true
+		},
+		{
+			"title": "React-clothing",
+			"techs": [
+				"JS",
+				"CSS",
+				"HTML",
+				"BOOTSTRAP",
+				"API REST",
+				"REACT",
+				"REDUX",
+				"REACT-HOOKS",
+				"REACT-CONTEXT",
+				"FIREBASE",
+				"STYLED COMPONENTS"
+			],
+			"link": "",
+			"github": "https://github.com/angelluishernandez/helpers",
+			"description": "Proyecto personal. Una aplicación que permite al usuario registrar tareas con sus pasos correspondientes",
+			"description2": "Desarrollado con Javascript, HTML, CSS, Bootstrap, Styled Components, NodeJS, Express, React (Redux, Hooks y Context), Firebase",
+			"isIronhack": true
+		}
+	]
+}
