@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const NavBarComponent = () => {
-	const [isTop, setIsTop] = useState(false);
+	const [isTop, setIsTop] = useState(true);
 
 	useEffect(() => {
 		document.addEventListener("scroll", () => {
@@ -35,22 +35,22 @@ const NavBarComponent = () => {
 			<div className="collapse navbar-collapse" id="navbarNav">
 				<ul className="navbar-nav">
 					<li className="nav-item active">
-						<Link className="link-item nav-link" href="#">
-							ABOUT ME
+						<Link className="link-item nav-link" to="/">
+							ABOUT
 						</Link>
 					</li>
 					<li className="nav-item">
-						<Link className="link-item nav-link" href="#">
+						<Link className="link-item nav-link" to="/stack">
 							STACK
 						</Link>
 					</li>
 					<li className="nav-item">
-						<Link className="link-item nav-link" href="#">
+						<Link className="link-item nav-link" to="/projects">
 							PROJECTS
 						</Link>
 					</li>
 					<li className="nav-item">
-						<Link className="link-item nav-link" href="#">
+						<Link className="link-item nav-link" to="/contact">
 							CONTACT
 						</Link>
 					</li>

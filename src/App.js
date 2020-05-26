@@ -6,14 +6,20 @@ import AboutComponent from "./components/About/AboutComponent";
 import ProjectsContainer from "./components/Projects/ProjectsContainer";
 import LowerNavbar from "./components/LowerNavbar/LowerNavbar";
 import Divider from "./components/Divider";
+import Description from "./components/Description/Description";
+import { Switch, Route } from "react-router-dom";
+import Contact from "./components/Contact/Contact";
 
 function App() {
 	return (
 		<div className="App">
 			<NavBarComponent />
-			<AboutComponent />
-			<Divider />
-			<ProjectsContainer />
+			<Switch>
+				<Route exact path={"/"} component={AboutComponent} />
+				<Route exact path={"/stack"} component={Description} />
+				<Route exact path={"/projects"} component={ProjectsContainer} />
+				<Route exact path={"/contact"} component={Contact} />
+			</Switch>
 			<LowerNavbar />
 		</div>
 	);
