@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const ButtonContainer = styled.button`
 	background-color: transparent;
-	border: 2px solid white;
+	border: 2px solid var(--linkBackground);
 	width: 30%;
-	color: white;
+	color: var(--linkBackground);
 	overflow: auto;
 
 	&:hover {
-		background-color: white;
+		background-color: var(--linkBackground);
 		color: black;
 	}
 

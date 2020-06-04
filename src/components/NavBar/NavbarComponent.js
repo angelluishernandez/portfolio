@@ -18,7 +18,7 @@ const NavBarComponent = () => {
 				isTop ? "navbar-transparent" : "navbar-colored"
 			}`}
 		>
-			<Link className="navbar-brand" to="#" id="nav-name">
+			<Link className="navbar-brand" to="/" id="nav-name">
 				ÁNGEL LUIS HERNÁNDEZ HERRERO
 			</Link>
 			<button

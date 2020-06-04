@@ -1,7 +1,7 @@
 import React from "react";
 import { ButtonContainer } from "../styled-components/ButtonContainer";
 import { Horizontal } from "../styled-components/Horizontal";
-import Particles from "react-particles-js";
+import { Link } from "react-router-dom";
 
 const AboutComponent = () => (
 	<section className="AboutComponent" id="about">
@@ -18,7 +18,7 @@ const AboutComponent = () => (
 					</div>
 
 					<ButtonContainer>
-						<a href="#about">Check out my work</a>
+						<Link to="/projects">Check out my work</Link>
 					</ButtonContainer>
 				</div>
 			</div>

@@ -1,10 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { ButtonContainer } from "../styled-components/ButtonContainer";
-import emailjs from "emailjs-com";
 import portfolioService from "../../services/portfolioService";
-
-import axios from "axios";
 
 const Contact = () => {
 	const [name, setName] = useState("");

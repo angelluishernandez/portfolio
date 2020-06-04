@@ -1,6 +1,6 @@
 import React from "react";
 import portfolioService from "../services/portfolioService";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Api = () => {
 	const [apiWorkMsg, setIsApiWorking] = useState("");

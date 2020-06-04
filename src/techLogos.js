@@ -30,7 +30,7 @@ export const techLogos = [
 		img: react,
 	},
 	{
-		name: "redux",
+		name: "Redux",
 		img: redux,
 	},
 	{

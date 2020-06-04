@@ -1,11 +1,9 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import NavBarComponent from "./components/NavBar/NavbarComponent";
 import AboutComponent from "./components/About/AboutComponent";
 import ProjectsContainer from "./components/Projects/ProjectsContainer";
 import LowerNavbar from "./components/LowerNavbar/LowerNavbar";
-import Divider from "./components/Divider";
 import Api from "./components/Api";
 import Description from "./components/Description/Description";
 import { Switch, Route } from "react-router-dom";
