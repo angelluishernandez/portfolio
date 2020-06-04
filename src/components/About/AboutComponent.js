@@ -1,6 +1,7 @@
 import React from "react";
 import { ButtonContainer } from "../styled-components/ButtonContainer";
 import { Horizontal } from "../styled-components/Horizontal";
+import Particles from "react-particles-js";
 
 const AboutComponent = () => (
 	<section className="AboutComponent" id="about">

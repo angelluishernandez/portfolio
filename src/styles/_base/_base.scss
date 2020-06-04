@@ -1,7 +1,15 @@
+body{
+  background-color: $section-background;
+}
+
+
+
 h1, h2, h3, h4, h5, h6{
   font-family: $titles;
+  color: $title-color; 
 }
 
 p, a, span, li{
  font-family: $subtittles; 
+ color: $text-color; 
 }

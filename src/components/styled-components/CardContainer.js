@@ -32,7 +32,7 @@ export const CardContainer = styled.div`
 	.card-text::-webkit-scrollbar-thumb {
 		border-radius: 10px;
 		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-		background-color: $primary;
+		background-color: coral;
 	}
 
 	&:hover {
