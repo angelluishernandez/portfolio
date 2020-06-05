@@ -4,6 +4,10 @@ import { useState, useEffect } from "react";
 
 const NavBarComponent = () => {
 	const [isTop, setIsTop] = useState(true);
+	const [isCollapsed, setIsCollapsed] = useState(false);
+	const showMenu = isCollapsed ? "show mobile-menu" : "";
+
+	const toggleNavbar = () => setIsCollapsed(!isCollapsed);
 
 	useEffect(() => {
 		document.addEventListener("scroll", () => {
@@ -14,12 +18,13 @@ const NavBarComponent = () => {
 
 	return (
 		<nav
-			className={`navbar navbar-expand-lg NavBarComponent ${
+			className={`navbar navbar-expand-lg NavBarComponent	d-flex ${
 				isTop ? "navbar-transparent" : "navbar-colored"
 			}`}
 		>
 			<Link className="navbar-brand" to="/" id="nav-name">
-				ÁNGEL LUIS HERNÁNDEZ HERRERO
+				<span className="full-text">ÁNGEL LUIS HERNÁNDEZ HERRERO</span>
+				<span className="short-text">ÁNGEL HERNÁNDEZ</span>
 			</Link>
 			<button
 				className="navbar-toggler"
@@ -29,10 +34,11 @@ const NavBarComponent = () => {
 				aria-controls="navbarNav"
 				aria-expanded="false"
 				aria-label="Toggle navigation"
+				onClick={toggleNavbar}
 			>
 				<span className="navbar-toggler-icon"></span>
 			</button>
-			<div className="collapse navbar-collapse" id="navbarNav">
+			<div className={`collapse navbar-collapse ${showMenu}`} id="navbarNav">
 				<ul className="navbar-nav">
 					<li className="nav-item active">
 						<Link className="link-item nav-link" to="/">
