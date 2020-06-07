@@ -5,10 +5,13 @@ export const CardContainer = styled.div`
 		background-color: #22252b;
 		border: 2px !important;
 		transition: all 0.2s linear;
-		height: 30vh;
 		border-radius: 5px;
-		height: 250px;
+
 		padding: 5%;
+	}
+
+	.project-card:hover {
+		cursor: pointer;
 	}
 
 	.card-text {

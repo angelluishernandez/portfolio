@@ -10,4 +10,9 @@ export const ModalContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	#modal {
+		background: #22252b;
+		margin: 0 auto;
+	}
 `;
