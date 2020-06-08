@@ -1,9 +1,11 @@
 import realfooder from "../src/images/projects/realfooder.png";
 import empresaurio from "../src/images/projects/empresaurio.png";
 import ironnews from "../src/images/projects/ironnews.png";
+import api from "../src/images/projects/api.png";
 import expense from "../src/images/projects/expense.png";
 import helpers from "../src/images/projects/helpers.png";
 import solidarity from "../src/images/projects/solidarity.png";
+import clothing from "../src/images/projects/clothing.png";
 
 export const projects = [
 	{
@@ -61,7 +63,7 @@ export const projects = [
 		isFinished: true,
 		title: "IronNews - Back",
 		techs: ["NODE", "EXPRESS", "MONGODB"],
-		img: "",
+		img: api,
 		link: "https://ironnewsapi.herokuapp.com",
 		github: "https://github.com/angelluishernandez/Ironnews-api",
 		description: "Tercer proyecto de Ironhack. Back para IronNews",
@@ -162,7 +164,7 @@ export const projects = [
 			"FIREBASE",
 			"STYLED COMPONENTS",
 		],
-		img: "clothing",
+		img: clothing,
 		link: "",
 		github: "https://github.com/angelluishernandez/helpers",
 		description:
