@@ -10,7 +10,12 @@ export const CardContainer = styled.div`
 		padding: 5%;
 	}
 
-	.project-card:hover {
+	.project-img {
+		max-width: 100%;
+	}
+
+	.project-card img,
+	h5:hover {
 		cursor: pointer;
 	}
 

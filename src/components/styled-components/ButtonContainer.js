@@ -14,9 +14,10 @@ export const ButtonContainer = styled.button`
 
 	a {
 		text-decoration: none;
-		font-size: 1.3em;
+		color: inherit;
+		/* font-size: 1.3em;
 		font-weight: 200;
 		font-family: "Poppins", sans-serif;
-		color: inherit;
+		color: inherit; */
 	}
 `;
