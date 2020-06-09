@@ -6,11 +6,15 @@ const Api = () => {
 	const [apiWorkMsg, setIsApiWorking] = useState("");
 
 	portfolioService.isApiWorking().then((response) => {
-		setIsApiWorking(response);
+		setIsApiWorking(response.data);
 	});
 
 	console.log(apiWorkMsg);
-	return <div>{apiWorkMsg}</div>;
+	return (
+		<div>
+			<h1>{apiWorkMsg}</h1>
+		</div>
+	);
 };
 
 export default Api;

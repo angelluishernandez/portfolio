@@ -1,12 +1,18 @@
 
 .Contact{
-  
   margin-top: 10vh;
+  margin-bottom: 10vh;
   height: 100%;
   width: 100%; 
   text-align: center;
   background-color: $section-background;
   color: $text-color; 
+}
+
+@media(max-width: 500px){
+  .Contact{
+    margin-top: 1vh;
+  }
 }
 
 .form-group{

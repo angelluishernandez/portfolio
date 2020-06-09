@@ -4,13 +4,12 @@ import { CardContainer } from "../styled-components/CardContainer";
 import { TechChip } from "../styled-components/TechChip";
 import { PortfolioConsumer } from "../../contexts/PortfolioContext";
 import { ButtonContainer } from "../styled-components/ButtonContainer";
-import { Link } from "react-router-dom";
 
 const ProjectModal = ({ isModalOpen, openModal }) => {
 	return (
 		<PortfolioConsumer>
 			{(value) => {
-				const { openModal, isModalOpen, closeModal } = value;
+				const { isModalOpen, closeModal } = value;
 				const {
 					title,
 					description,

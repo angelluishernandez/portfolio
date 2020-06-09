@@ -7,7 +7,7 @@ const http = axios.create({
 
 const isApiWorking = () => http.get("/");
 
-const sendEmailToApi = (email) => http.post("/send", email);
+const sendEmailToApi = (email) => http.post("/send-mail", email);
 
 export default {
 	isApiWorking,

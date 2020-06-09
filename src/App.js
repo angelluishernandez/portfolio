@@ -16,10 +16,10 @@ function App() {
 			<NavBarComponent />
 			<Switch>
 				<Route exact path={"/"} component={AboutComponent} />
+				<Route exact path={"/api"} component={Api} />
 				<Route exact path={"/stack"} component={Description} />
 				<Route exact path={"/projects"} component={ProjectsContainer} />
 				<Route exact path={"/contact"} component={Contact} />
-				<Route exact path={"/api"} component={Api} />
 			</Switch>
 			<ProjectModal />
 			<LowerNavbar />

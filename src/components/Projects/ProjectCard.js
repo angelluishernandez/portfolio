@@ -18,13 +18,13 @@ const ProjectCard = ({ openModal, isModalOpen, project }) => {
 
 				<div className="card-body text-center mx-auto">
 					<h5 className="card-title text-center">{project.title}</h5>
-					<ButtonContainer
-						onClick={() => openModal(project.id)}
-						className="w-100"
-					>
-						Check details
-					</ButtonContainer>
 				</div>
+				<ButtonContainer
+					onClick={() => openModal(project.id)}
+					className="mx-auto mb-3"
+				>
+					Check details
+				</ButtonContainer>
 				<div className="d-flex justify-content-center">
 					<ButtonContainer>
 						<a href={project.github} target="blank">
