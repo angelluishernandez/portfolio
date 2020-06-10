@@ -6,7 +6,6 @@ export const CardContainer = styled.div`
 		border: 2px !important;
 		transition: all 0.2s linear;
 		border-radius: 5px;
-
 		padding: 5%;
 	}
 
@@ -41,6 +40,37 @@ export const CardContainer = styled.div`
 		border-radius: 10px;
 		-webkit-box-shadow: inset 0 0 6px #f3ca20;
 		background-color: #f3ca20;
+	}
+
+	.warning-sign {
+		top: 0;
+		right: 0;
+		left: 0;
+		width: 50%;
+		margin-top: 25%;
+		margin: auto auto;
+		visibility: hidden;
+		position: absolute;
+		opacity: 0;
+		transition: opacity 0.2s, visibility 0.2s;
+
+		&h5 {
+			font-weight: 800;
+			border-bottom: 2px;
+		}
+	}
+
+	.project-card:hover {
+		.warning-sign {
+			visibility: visible;
+			opacity: 1;
+			z-index: 500;
+			justify-content: center;
+		}
+		.not-finished {
+			/* filter: grayscale(100%); */
+			filter: brightness(50%);
+		}
 	}
 
 	@media (max-width: 500px) {

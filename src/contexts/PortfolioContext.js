@@ -8,9 +8,26 @@ class PortfolioProvider extends Component {
 		isModalOpen: false,
 		projects: projects,
 		modalProject: {},
+		isCollapsed: false,
 	};
 
 	getProject = (id) => this.state.projects.find((item) => item.id === id);
+
+	// Navbar methods
+
+	toggleNavbar = () => {
+		this.setState({
+			isCollapsed: !this.state.isCollapsed,
+		});
+	};
+
+	closeNavbar = () => {
+		this.setState({
+			isCollapsed: false,
+		});
+	};
+
+	// Project modal methods
 
 	openModal = (id) => {
 		const project = this.getProject(id);
@@ -35,6 +52,9 @@ class PortfolioProvider extends Component {
 					openModal: this.openModal,
 					closeModal: this.closeModal,
 					modalProject: this.state.modalProject,
+					isCollapsed: this.state.isCollapsed,
+					toggleNavbar: this.toggleNavbar,
+					closeNavbar: this.closeNavbar,
 				}}
 			>
 				{this.props.children}

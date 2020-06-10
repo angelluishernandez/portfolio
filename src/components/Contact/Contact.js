@@ -21,7 +21,6 @@ const Contact = () => {
 	};
 
 	const handleSubmit = (e) => {
-		console.log("entra");
 		e.preventDefault();
 		const emailToSend = {
 			name,

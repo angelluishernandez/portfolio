@@ -9,7 +9,6 @@ const Api = () => {
 		setIsApiWorking(response.data);
 	});
 
-	console.log(apiWorkMsg);
 	return (
 		<div>
 			<h1>{apiWorkMsg}</h1>
