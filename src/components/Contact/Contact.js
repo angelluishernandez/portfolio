@@ -28,6 +28,7 @@ const Contact = () => {
 			subject,
 			message,
 		};
+		console.log(emailToSend);
 
 		portfolioService
 			.sendEmailToApi(emailToSend)
