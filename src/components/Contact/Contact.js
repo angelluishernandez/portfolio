@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import portfolioService from "../../services/portfolioService";
 import ContactForm from "./ContactForm";
+import axios from "axios";
 
 const EMAIL_PATTERN = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -64,16 +64,18 @@ const Contact = () => {
 		handleValidation({ ...emailToSend });
 
 		if (!errors) {
-			portfolioService
-				.sendEmailToApi({ ...emailToSend })
-				.then((response) => {
-					if (response) resetForm();
-					setEmailSent(true);
-				})
-				.catch((error) => console.log(error));
+			axios({
+				method: "post",
+				url: "/",
+				data: {
+					...emailToSend,
+				},
+			}).then(() => {
+				setEmailSent(true);
+				resetForm();
+			});
 		}
 	};
-
 	const props = {
 		handleSubmit,
 		errors,
