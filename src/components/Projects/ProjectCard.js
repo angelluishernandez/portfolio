@@ -4,8 +4,6 @@ import { ButtonContainer } from "../styled-components/ButtonContainer";
 import warning from "../../images/warning.svg";
 
 const ProjectCard = ({ openModal, isModalOpen, project }) => {
-	console.log(project);
-
 	return (
 		<CardContainer className="col-12 col-lg-4 mx-auto mb-2">
 			<div className="project-card d-flex flex-column">

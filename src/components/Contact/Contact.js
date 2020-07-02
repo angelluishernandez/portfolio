@@ -54,7 +54,6 @@ const Contact = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		console.log(emailForm);
 		const emailToSend = {
 			name: emailForm.name,
 			email: emailForm.email,
@@ -62,7 +61,6 @@ const Contact = () => {
 			message: emailForm.message,
 		};
 
-		console.log(emailToSend, "!!!!!!!!!!!!!");
 		handleValidation({ ...emailToSend });
 
 		if (!errors) {
